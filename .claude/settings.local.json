@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openspec list:*)",
+      "Bash(openspec validate:*)",
+      "Bash(openspec show implement-agent-core --json --deltas-only)",
+      "Bash(python3 -c \"from core.tool import read_file, list_file_tree, search_in_files, create_path, edit_path, replace_in_file, fetch_website_html, use_search_engine, tell_human_something; print(''✅ All tools imported successfully'')\")",
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m black:*)",
+      "Bash(python -m flake8:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

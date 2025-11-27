@@ -1,0 +1,23 @@
+# Mini Code Agent Configuration
+# Place this file at:
+# - Project path: <project>/.mini-code-agent/config.yaml
+# - User path: ~/.mini-code-agent/config.yaml
+
+# DSPy (LLM) Configuration
+dspy:
+  # Model identifier (e.g., "openai/gpt-4", "anthropic/claude-3", "openai/deepseek-chat")
+  model: "openai/deepseek-chat"
+
+  # API Key for your LLM provider
+  api_key: "your-api-key-here"
+
+  # Optional: API base URL (for custom endpoints or proxies)
+  api_base: "https://api.deepseek.com/v1"
+
+  # Allow async tool conversion (usually keep as true)
+  allow_tool_async_sync_conversion: true
+
+# Agent Configuration
+agent:
+  # Maximum iterations for ReAct agent (prevents infinite loops)
+  max_iters: 200
